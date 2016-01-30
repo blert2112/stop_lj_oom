@@ -42,7 +42,7 @@ Configuration:
 
 minetest.register_globalstep(function(dtime)
 	--print(collectgarbage("count"))
-	if collectgarbage("count") > 51200 then
+	if collectgarbage("count") > 307200 then
 		core.log("action", "[MOD] [stop_lj_oom]: Collecting Garbage")
 		collectgarbage()
 	end
